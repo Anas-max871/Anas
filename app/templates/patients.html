@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="card"><h2>Список пациентов</h2>
+  {% if patients %}
+  <table class="table"><thead><tr><th>ФИО</th><th>Возраст</th><th>Пол</th><th>Жалобы</th></tr></thead><tbody>
+    {% for p in patients %}
+    <tr><td>{{ p.full_name }}</td><td>{{ p.age }}</td><td>{{ p.gender }}</td><td>{{ p.complaint }}</td></tr>
+    {% endfor %}
+  </tbody></table>
+  {% else %}<p>Пациенты отсутствуют.</p>{% endif %}
+</div>
+{% endblock %}

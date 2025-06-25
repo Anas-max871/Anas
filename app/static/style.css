@@ -1,0 +1,19 @@
+* { box-sizing: border-box; margin:0; padding:0; }
+body { font-family:'Open Sans',sans-serif; background:#f0f2f5; color:#333; }
+.header { background:#4caf50; color:#fff; padding:1em; text-align:center; }
+.navbar { display:flex; justify-content:center; background:#388e3c; }
+.navbar a { color:#fff; padding:0.75em 1em; text-decoration:none; transition: background .3s; }
+.navbar a:hover { background:#2e7d32; }
+.container { max-width:900px; margin:2em auto; padding:0 1em; }
+.hero { background:#fff; padding:2em; border-radius:8px; text-align:center; box-shadow:0 2px 8px rgba(0,0,0,0.1); margin-bottom:1.5em; }
+.card { background:#fff; padding:1.5em; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.1); margin-bottom:1.5em; }
+.card h2 { color:#4caf50; margin-bottom:1em; }
+.form-group { margin-bottom:1em; }
+.form-group label { display:block; margin-bottom:0.5em; font-weight:600; }
+.input, select { width:100%; padding:0.5em; border:1px solid #ccc; border-radius:4px; }
+.btn { width:100%; padding:0.75em; background:#4caf50; color:#fff; border:none; border-radius:4px; cursor:pointer; transition: background .3s; }
+.btn:hover { background:#388e3c; }
+.table { width:100%; border-collapse:collapse; margin-top:1em; }
+.table th, .table td { padding:0.75em; border-bottom:1px solid #ddd; text-align:left; }
+.table th { background:#4caf50; color:#fff; }
+.footer { background:#e0e0e0; text-align:center; padding:1em; margin-top:2em; }

@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>{{ title or "Клиника Здоровье" }}</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <header class="header"><h1>🏥 Клиника «Здоровье»</h1></header>
+  <nav class="navbar">
+    <a href="{{ url_for('main.index') }}">Главная</a>
+    <a href="{{ url_for('main.register') }}">Регистрация</a>
+    <a href="{{ url_for('main.patients') }}">Пациенты</a>
+    <a href="{{ url_for('main.appointment') }}">Запись</a>
+    <a href="{{ url_for('main.appointments') }}">Список записей</a>
+  </nav>
+  <main class="container">{% block content %}{% endblock %}</main>
+  <footer class="footer">© 2025 Клиника «Здоровье»</footer>
+</body>
+</html>

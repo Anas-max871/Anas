@@ -1,0 +1,3 @@
+SECRET_KEY = 'supersecretkey123'
+SQLALCHEMY_DATABASE_URI = 'sqlite:///clinic.db'
+SQLALCHEMY_TRACK_MODIFICATIONS = False

@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="card"><h2>Регистрация пациента</h2>
+  <form method="post">
+    {{ form.hidden_tag() }}
+    <div class="form-group"><label>{{ form.full_name.label }}</label>{{ form.full_name(size=40) }}</div>
+    <div class="form-group"><label>{{ form.age.label }}</label>{{ form.age() }}</div>
+    <div class="form-group"><label>{{ form.gender.label }}</label>{{ form.gender() }}</div>
+    <div class="form-group"><label>{{ form.complaint.label }}</label>{{ form.complaint(size=60) }}</div>
+    <button class="btn">{{ form.submit.label.text }}</button>
+  </form>
+</div>
+{% endblock %}
